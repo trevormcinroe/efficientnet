@@ -266,24 +266,36 @@ def EfficientNet(width_coefficient,
     the one specified in your Keras config at `~/.keras/keras.json`.
     # Arguments
         width_coefficient: float, scaling coefficient for network width.
+
         depth_coefficient: float, scaling coefficient for network depth.
+
         default_resolution: int, default input image size.
+
         dropout_rate: float, dropout rate before final classifier layer.
+
         drop_connect_rate: float, dropout rate at skip connections.
+
         depth_divisor: int.
+
         blocks_args: A list of BlockArgs to construct block modules.
+
         model_name: string, model name.
+
         include_top: whether to include the fully-connected
             layer at the top of the network.
+
         weights: one of `None` (random initialization),
               'imagenet' (pre-training on ImageNet),
               or the path to the weights file to be loaded.
+
         input_tensor: optional Keras tensor
             (i.e. output of `layers.Input()`)
             to use as image input for the model.
+
         input_shape: optional shape tuple, only to be specified
             if `include_top` is False.
             It should have exactly 3 inputs channels.
+
         pooling: optional pooling mode for feature extraction
             when `include_top` is `False`.
             - `None` means that the output of the model will be
@@ -295,11 +307,14 @@ def EfficientNet(width_coefficient,
                 the output of the model will be a 2D tensor.
             - `max` means that global max pooling will
                 be applied.
+
         classes: optional number of classes to classify images
             into, only to be specified if `include_top` is True, and
             if no `weights` argument is specified.
+
     # Returns
         A Keras model instance.
+
     # Raises
         ValueError: in case of invalid argument for `weights`,
             or invalid input shape.
